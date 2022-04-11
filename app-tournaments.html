@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Wisebe App</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=d41d8cd98f00b204e9800998ecf8427e">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope:200,300,400,500,600,700,800&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css?h=0e5604f912273ef185ac02e47b9a1bbb">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-grid.compiled.css?h=c1731cd5eedf83492dda2b5034a7d8fb">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-reboot.compiled.css?h=f173c17fc6aaaad6f94f803491469032">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-utilities.compiled.css?h=ba951a3e65ef335763fb2928290e786d">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.compiled.css?h=37be6872d09939b8838a630113a4e6ef">
+    <link rel="stylesheet" href="assets/css/page.compiled.css?h=ffc6157de2ad68cad81d207becb5dd67">
+    <link rel="stylesheet" href="assets/css/utilities/utilities.compiled.css?h=2ccf691ecd2eb3c63bc174a6dea3f77a">
+    <link rel="stylesheet" href="assets/css/overrides/overrides.compiled.css?h=21c5a577fd9d3a9f78378c29e6fa2fd2">
+</head>
+
+<body class="bg-light">
+    <div>
+        <header>
+            <div>
+                <nav class="navbar navbar-dark navbar-expand-lg bg-primary py-3">
+                    <div class="container"><a class="navbar-brand" href="app.html"><img class="mt-n2 h--25" src="assets/img/logo/logo-wisebe.svg?h=6114c273d46f950f011908f9c1175873"></a><button data-bs-toggle="collapse" class="navbar-toggler rounded-0 border-0 p-0" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navcol-1">
+                            <div class="w-100">
+                                <div class="row justify-content-between align-items-center my-n2">
+                                    <div class="col-auto py-2">
+                                        <ul class="navbar-nav text-nowrap text-uppercase fw-bold fs--medium">
+                                            <li class="nav-item"><a class="nav-link" href="app-quizes.html">Quizy</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="app-tournaments.html">Turnieje</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="app-users.html">Użytkownicy</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="app-reports.html">Zgłoszenia</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="app-algorithms.html">Algorytmy</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-auto py-2">
+                                        <div class="row align-items-center m-n2">
+                                            <div class="col-auto p-2"><button class="btn btn-light border-0 p-0" type="button" data-bs-target="#modal__search" data-bs-toggle="modal"><span class="d-flex align-items-center"><span class="ratio w--35 h--35 rounded-circle"><span><i class="fas fa-search"></i></span></span><span class="fw-bold d-none d-xl-block me-3">Wyszukaj</span></span></button></div>
+                                            <div class="col-auto p-2">
+                                                <div class="dropdown"><a class="dropdown-toggle fw-bold link-light d-flex align-items-center btn btn-none rounded-0 p-0" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-flex justify-content-start align-items-center flex-nowrap"><span class="h--35 w--35 ratio ratio-1-1 rounded-circle"><span><img src="assets/img/icons/icon-avatar.svg?h=ac97a4690e5413f082056c4eb9282a85"></span></span><span class="d-block ms-2 me-1">Moje konto</span></span></a>
+                                                    <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item" href="app-profile.html">Profil</a><a class="dropdown-item" href="app-settings.html">Ustawienia</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="index.html">Wyloguj</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="bg-white shadow-sm py--12 border-bottom">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="app.html"><span>Wisebe</span></a></li>
+                        <li class="breadcrumb-item"><a href="app-tournaments.html"><span>Turnieje</span></a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="py-4">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-12">
+                            <div>
+                                <div class="row gx-2 gy-3 justify-content-between align-items-end">
+                                    <div class="col-auto">
+                                        <h2 class="fw-bold mb-0">Turnieje</h2>
+                                    </div>
+                                    <div class="col-auto">
+                                        <form>
+                                            <div class="input-group input-group-pill"><input class="form-control bg-white" type="text" placeholder="Szukaj…"><button class="btn btn-primary" type="button">Wyszukaj</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <form>
+                                <div class="table-responsive floathead">
+                                    <table class="table table-striped table-borderless mb-0">
+                                        <thead class="border-0">
+                                            <tr>
+                                                <th class="text-center text-white bg-primary w--10"><i class="far fa-square"></i></th>
+                                                <th class="text-white bg-primary">Nazwa turnieju</th>
+                                                <th class="text-white bg-primary">Pytania</th>
+                                                <th class="text-end text-white bg-primary">Opcje</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="align-middle">
+                                            <tr>
+                                                <td><span class="d-flex justify-content-center form-check"><input type="checkbox" class="form-check-input"></span></td>
+                                                <th>Ciekawe historie o Bobie Dylanie</th>
+                                                <td>12</td>
+                                                <td>
+                                                    <div class="row gx-1 gy-1 justify-content-end align-items-center">
+                                                        <div class="col-auto"><button class="btn btn-success btn-sm fw-bold" type="button">Edytuj</button></div>
+                                                        <div class="col-auto"><button class="btn btn-warning btn-sm fw-bold" type="button">Blokuj</button></div>
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm fw-bold" type="button">Przedłuż</button></div>
+                                                        <div class="col-auto"><button class="btn btn-danger btn-sm fw-bold link-light" type="button">Usuń</button></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="d-flex justify-content-center form-check"><input type="checkbox" class="form-check-input"></span></td>
+                                                <th>Ciekawe historie o Bobie Dylanie</th>
+                                                <td>12</td>
+                                                <td>
+                                                    <div class="row gx-1 gy-1 justify-content-end align-items-center">
+                                                        <div class="col-auto"><button class="btn btn-success btn-sm fw-bold" type="button">Edytuj</button></div>
+                                                        <div class="col-auto"><button class="btn btn-warning btn-sm fw-bold" type="button">Blokuj</button></div>
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm fw-bold" type="button">Przedłuż</button></div>
+                                                        <div class="col-auto"><button class="btn btn-danger btn-sm fw-bold link-light" type="button">Usuń</button></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="bg-primary fixed-bottom py-3">
+                                    <div class="container px-3">
+                                        <div class="row gx-2 gy-2 justify-content-end">
+                                            <div class="col-auto"><button class="btn btn-warning fw-bold" type="button">Blokuj</button></div>
+                                            <div class="col-auto"><button class="btn btn-secondary fw-bold text-white" type="button">Przedłuż</button></div>
+                                            <div class="col-auto"><button class="btn btn-danger fw-bold link-light" type="button">Usuń</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal__search">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body">
+                        <p>The content of your modal.</p>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js?h=84e399b8f2181ccd73394fdeddff1638"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js?h=5488c86a1260428f0c13c0f8fb06bf6a"></script>
+    <script src="assets/js/utilities/svg.js?h=d9ea285243bbaa184c8b082f54b30ff4"></script>
+    <script src="assets/js/utilities/scroll.js?h=6b45ee3f322378dc3faf859cb456034a"></script>
+</body>
+
+</html>

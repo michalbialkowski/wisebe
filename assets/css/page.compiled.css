@@ -1,0 +1,9 @@
+* {
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.auth {
+  min-height: 100vh;
+}
