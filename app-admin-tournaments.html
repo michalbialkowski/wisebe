@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/overrides/overrides.compiled.css?h=21c5a577fd9d3a9f78378c29e6fa2fd2">
 </head>
 
-<body class="guest bg-light">
+<body class="admin bg-light">
     <div>
         <header>
             <div>
@@ -60,20 +60,89 @@
             </div>
         </header>
         <main>
+            <div class="bg-white shadow-sm py--12 border-bottom">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="app-admin.html"><span>Wisebe</span></a></li>
+                        <li class="breadcrumb-item"><a href="app-admin-tournaments.html"><span>Turnieje</span></a></li>
+                    </ol>
+                </div>
+            </div>
             <div class="py-4">
                 <div class="container">
-                    <div class="row my-n2">
-                        <div class="col-12 py-2">
-                            <h2 class="fw-bold mb-0">Home page</h2>
+                    <div class="row gy-3">
+                        <div class="col-12">
+                            <div>
+                                <div class="row gx-2 gy-3 justify-content-between align-items-end">
+                                    <div class="col-auto">
+                                        <h2 class="fw-bold mb-0">Turnieje</h2>
+                                    </div>
+                                    <div class="col-auto">
+                                        <form>
+                                            <div class="input-group input-group-pill"><input class="form-control bg-white" type="text" placeholder="Szukaj…"><button class="btn btn-primary" type="button">Wyszukaj</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 py-2"></div>
+                        <div class="col-12">
+                            <form>
+                                <div class="table-responsive floathead">
+                                    <table class="table table-striped table-borderless mb-0">
+                                        <thead class="border-0">
+                                            <tr>
+                                                <th class="text-center text-white bg-primary w--10"><i class="far fa-square"></i></th>
+                                                <th class="text-white bg-primary">Nazwa turnieju</th>
+                                                <th class="text-white bg-primary">Pytania</th>
+                                                <th class="text-white bg-primary">Użytkownik</th>
+                                                <th class="text-end text-white bg-primary">Opcje</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="align-middle">
+                                            <tr>
+                                                <td><span class="d-flex justify-content-center form-check"><input type="checkbox" class="form-check-input"></span></td>
+                                                <th>Ciekawe historie o Bobie Dylanie</th>
+                                                <td>12</td>
+                                                <th><span class="d-flex justify-content-start align-items-center flex-nowrap"><span class="h--35 w--35 ratio ratio-1-1 rounded-circle"><span><img src="assets/img/icons/icon-avatar.svg?h=ac97a4690e5413f082056c4eb9282a85"></span></span><span class="d-block ms-2 me-1">@ewa</span></span></th>
+                                                <td>
+                                                    <div class="row gx-1 gy-1 justify-content-end align-items-center">
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm fw-bold" type="button" data-bs-target="#modal__tournament__prolongation" data-bs-toggle="modal">Przedłuż</button></div>
+                                                        <div class="col-auto"><button class="btn btn-warning btn-sm fw-bold" type="button" data-bs-target="#modal__tournament__lock" data-bs-toggle="modal">Blokuj</button></div>
+                                                        <div class="col-auto"><button class="btn btn-danger btn-sm fw-bold link-light" type="button" data-bs-target="#modal__tournament__delete" data-bs-toggle="modal">Usuń</button></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="d-flex justify-content-center form-check"><input type="checkbox" class="form-check-input"></span></td>
+                                                <th>Ciekawe historie o Bobie Dylanie</th>
+                                                <td>12</td>
+                                                <th><span class="d-flex justify-content-start align-items-center flex-nowrap"><span class="h--35 w--35 ratio ratio-1-1 rounded-circle"><span><img src="assets/img/icons/icon-avatar.svg?h=ac97a4690e5413f082056c4eb9282a85"></span></span><span class="d-block ms-2 me-1">@ewa</span></span></th>
+                                                <td>
+                                                    <div class="row gx-1 gy-1 justify-content-end align-items-center">
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm fw-bold" type="button" data-bs-target="#modal__tournament__prolongation" data-bs-toggle="modal">Przedłuż</button></div>
+                                                        <div class="col-auto"><button class="btn btn-warning btn-sm fw-bold" type="button" data-bs-target="#modal__tournament__lock" data-bs-toggle="modal">Blokuj</button></div>
+                                                        <div class="col-auto"><button class="btn btn-danger btn-sm fw-bold link-light" type="button" data-bs-target="#modal__tournament__delete" data-bs-toggle="modal">Usuń</button></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="bg-primary fixed-bottom py-3">
+                                    <div class="container px-3">
+                                        <div class="row gx-2 gy-2 justify-content-end">
+                                            <div class="col-auto"><button class="btn btn-secondary fw-bold text-white" type="button" data-bs-target="#modal__tournament__prolongation" data-bs-toggle="modal">Przedłuż</button></div>
+                                            <div class="col-auto"><button class="btn btn-warning fw-bold" type="button" data-bs-target="#modal__tournament__lock" data-bs-toggle="modal">Blokuj</button></div>
+                                            <div class="col-auto"><button class="btn btn-danger fw-bold link-light" type="button" data-bs-target="#modal__tournament__delete" data-bs-toggle="modal">Usuń</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer>
-            <div></div>
-        </footer>
     </div>
     <div>
         <div class="modal fade" role="dialog" tabindex="-1" id="modal__search">

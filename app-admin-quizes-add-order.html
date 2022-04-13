@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/overrides/overrides.compiled.css?h=21c5a577fd9d3a9f78378c29e6fa2fd2">
 </head>
 
-<body class="guest bg-light">
+<body class="admin bg-light pb--70">
     <div>
         <header>
             <div>
@@ -60,20 +60,66 @@
             </div>
         </header>
         <main>
+            <div class="bg-white shadow-sm py--12 border-bottom">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="app-admin.html"><span>Wisebe</span></a></li>
+                        <li class="breadcrumb-item"><a href="app-admin-quizes.html"><span>Quizy</span></a></li>
+                        <li class="breadcrumb-item"><a href="app-admin-quizes-add.html"><span>Tytuł quizu</span></a></li>
+                        <li class="breadcrumb-item"><a href="app-admin-quizes-add-order.html"><span>Dodaj nowe pytanie</span></a></li>
+                    </ol>
+                </div>
+            </div>
             <div class="py-4">
                 <div class="container">
-                    <div class="row my-n2">
-                        <div class="col-12 py-2">
-                            <h2 class="fw-bold mb-0">Home page</h2>
+                    <div class="row gy-3">
+                        <div class="col-12">
+                            <div>
+                                <div class="row gx-2 gy-3 justify-content-between align-items-end">
+                                    <div class="col-auto">
+                                        <h2 class="fw-bold mb-0">Dodaj nowe pytanie</h2>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 py-2"></div>
+                        <div class="col-12">
+                            <form class="bg-white p-4">
+                                <div>
+                                    <div class="row gy-3">
+                                        <div class="col-12"><label class="form-label">Format pytania</label><select class="form-select form-select-lg">
+                                                <option value="">Zmień</option>
+                                                <option value="">Jednokrotny wybór</option>
+                                                <option value="">Wielokrotny wybór</option>
+                                                <option value="">Prawda / fałsz</option>
+                                                <option value="" selected="">Poukładaj w kolejności</option>
+                                                <option value="">Pytanie do obrazka</option>
+                                            </select></div>
+                                        <div class="col-12"><label class="form-label">Wpisz pytanie</label><textarea class="form-control form-control-lg" rows="4"></textarea></div>
+                                        <div class="col-12"><label class="form-label">Odpowiedzi</label>
+                                            <ul class="list-group">
+                                                <li class="list-group-item d-flex d-xxl-flex justify-content-between align-items-center"><span><span class="text-body me-2 text-opacity-50">A</span><span>Joni Mitchell</span></span><i class="fas fa-bars"></i></li>
+                                                <li class="list-group-item d-flex d-xxl-flex justify-content-between align-items-center"><span><span class="text-body me-2 text-opacity-50">B</span><span>Joan Baez</span></span><i class="fas fa-bars"></i></li>
+                                                <li class="list-group-item d-flex d-xxl-flex justify-content-between align-items-center"><span><span class="text-body me-2 text-opacity-50">C</span><span>Dodaj…</span></span><i class="fas fa-plus"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12"><label class="form-label">Gotowy materiał wideo</label><input class="form-control" type="file"></div>
+                                        <div class="col-12"><label class="form-label">Wideo uzupełniające</label><input class="form-control" type="file"></div>
+                                        <div class="col-12"><label class="form-label">Tekst uzupełniający</label><input class="form-control" type="file"></div>
+                                    </div>
+                                </div>
+                                <div class="bg-primary fixed-bottom py-3">
+                                    <div class="container px-3">
+                                        <div class="row gx-2 gy-2 justify-content-end">
+                                            <div class="col-auto"><a class="btn btn-success fw-bold" role="button" href="app-admin-quizes-add-questions.html">Dodaj pytanie</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer>
-            <div></div>
-        </footer>
     </div>
     <div>
         <div class="modal fade" role="dialog" tabindex="-1" id="modal__search">

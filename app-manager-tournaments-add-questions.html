@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/overrides/overrides.compiled.css?h=21c5a577fd9d3a9f78378c29e6fa2fd2">
 </head>
 
-<body class="guest bg-light">
+<body class="admin bg-light pb--70">
     <div>
         <header>
             <div>
@@ -60,20 +60,81 @@
             </div>
         </header>
         <main>
+            <div class="bg-white shadow-sm py--12 border-bottom">
+                <div class="container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="app-manager.html"><span>Wisebe</span></a></li>
+                        <li class="breadcrumb-item"><a href="app-manager-tournaments.html"><span>Turnieje</span></a></li>
+                        <li class="breadcrumb-item"><a href="app-admin-quizes-add-questions.html"><span>Tytuł turnieju</span></a></li>
+                    </ol>
+                </div>
+            </div>
             <div class="py-4">
                 <div class="container">
-                    <div class="row my-n2">
-                        <div class="col-12 py-2">
-                            <h2 class="fw-bold mb-0">Home page</h2>
+                    <div class="row gy-3">
+                        <div class="col-12">
+                            <div>
+                                <div class="row gx-2 gy-3 justify-content-between align-items-end">
+                                    <div class="col-auto">
+                                        <h2 class="fw-bold mb-0">Dodaj nowy turniej</h2>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 py-2"></div>
+                        <div class="col-12">
+                            <form class="bg-white p-4">
+                                <div>
+                                    <div class="row gy-3">
+                                        <div class="col-12"><label class="form-label">Tytuł quizu</label><input class="form-control form-control-lg" type="email" required="" name="email"></div>
+                                        <div class="col-12"><label class="form-label">Cover</label><input class="form-control form-control-lg" type="file"></div>
+                                        <div class="col-12"><label class="form-label">Oprawa graficzna</label>
+                                            <ul class="list-inline mb-0">
+                                                <li class="list-inline-item"><span class="ratio w--40 h--40 rounded" style="background: #FF764E;"><span></span></span></li>
+                                                <li class="list-inline-item"><span class="ratio w--40 h--40 rounded" style="background: #FFE270;"><span></span></span></li>
+                                                <li class="list-inline-item"><span class="ratio w--40 h--40 rounded" style="background: #A876F4;"><span></span></span></li>
+                                                <li class="list-inline-item"><span class="ratio w--40 h--40 rounded" style="background: #17F4C7;"><span></span></span></li>
+                                                <li class="list-inline-item"><span class="ratio w--40 h--40 rounded" style="background: #FF8DF2;"><span></span></span></li>
+                                                <li class="list-inline-item"><span class="ratio w--40 h--40 rounded" style="background: #32D0F0;"><span></span></span></li>
+                                                <li class="list-inline-item"><span class="ratio w--40 h--40 rounded" style="background: #878787;"><span></span></span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12"><label class="form-label">Pytania</label>
+                                            <div class="list-group"><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="app-manager-tournaments-add-select.html"><span class="fw-bold">Jak nazywała się folkowa piosenkarka i życiowa partnerka Boba Dylana z lat 1962-1965?</span><span class="d-flex align-items-center"><small class="text-body text-opacity-50">Jednokrotny wybór</small><i class="far fa-edit ms-2"></i></span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="app-manager-tournaments-add-multiselect.html"><span class="fw-bold">Jak nazywała się folkowa piosenkarka i życiowa partnerka Boba Dylana z lat 1962-1965?</span><span class="d-flex align-items-center"><small class="text-body text-opacity-50">Wielokrotny wybór</small><i class="far fa-edit ms-2"></i></span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="app-manager-tournaments-add-trueorfalse.html"><span class="fw-bold">Mariusz Pudzianowski był na okładce Playboya?</span><span class="d-flex align-items-center"><small class="text-body text-opacity-50">Prawda / fałsz</small><i class="far fa-edit ms-2"></i></span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="app-admin-quizes-add-order.html"><span class="fw-bold">Cztery kolejne odsłony iPhone, to:</span><span class="d-flex align-items-center"><small class="text-body text-opacity-50">Poukładaj w kolejności</small><i class="far fa-edit ms-2"></i></span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="app-manager-tournaments-add-picture.html"><span class="fw-bold">Gdzie znajdziesz tę budowę?</span><span class="d-flex align-items-center"><small class="text-body text-opacity-50">Pytanie do obrazka</small><i class="far fa-edit ms-2"></i></span></a></div>
+                                        </div>
+                                        <div class="col-12"><label class="form-label">Kategorie</label><select class="form-select form-select-lg">
+                                                <option value="">Wybierz</option>
+                                                <option value="">Sztuka</option>
+                                                <option value="">Muzyka</option>
+                                                <option value="">IT</option>
+                                            </select></div>
+                                        <div class="col-12"><label class="form-label">Hashtagi</label><input class="form-control form-control-lg" type="email" required="" name="email"></div>
+                                        <div class="col-12"><label class="form-label">Widoczność</label><select class="form-select form-select-lg">
+                                                <option value="12" selected="">Wszyscy</option>
+                                                <option value="14">Nikt</option>
+                                            </select></div>
+                                        <div class="col-12"><label class="form-label">Język quizu</label><select class="form-select form-select-lg">
+                                                <option value="12" selected="">Polski</option>
+                                                <option value="14">Angielski</option>
+                                            </select></div>
+                                        <div class="col-12">
+                                            <div class="form-check form-switch"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Wyłącz reklamy</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-primary fixed-bottom py-3">
+                                    <div class="container px-3">
+                                        <div class="row gx-2 gy-2 justify-content-end">
+                                            <div class="col-auto"><button class="btn btn-warning fw-bold" type="button" data-bs-target="#modal__tournament__question__type" data-bs-toggle="modal">Dodaj kolejne pytanie</button></div>
+                                            <div class="col-auto"><a class="btn btn-success fw-bold" role="button" href="app-manager-tournaments.html">Opublikuj</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer>
-            <div></div>
-        </footer>
     </div>
     <div>
         <div class="modal fade" role="dialog" tabindex="-1" id="modal__search">

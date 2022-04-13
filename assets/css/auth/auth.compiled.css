@@ -1,0 +1,15 @@
+body.auth .guest, body.user .guest, body.manager .guest, body.admin .guest {
+  display: none !important;
+}
+body.user .manager, body.user .admin {
+  display: none !important;
+}
+body.manager .user, body.manager .admin {
+  display: none !important;
+}
+body.admin .user, body.admin .manager {
+  display: none !important;
+}
+body.guest .auth, body.guest .user, body.guest .manager, body.guest .admin {
+  display: none !important;
+}
